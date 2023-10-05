@@ -432,80 +432,9 @@
       </div>
     </div>
      -->
-    <footer style="background-color: #2a9d8f;" class="site-footer">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-lg-4">
-            <div class="widget">
-              <h3>About</h3>
-              <p>Estamart, your ultimate online grocery service, is here to revolutionize your shopping experience. We offer a vast selection of fresh produce, pantry essentials, and household items, all at your fingertips. With our seamless platform, you can enjoy the convenience of shopping from the comfort of your home while receiving prompt and reliable doorstep delivery. Welcome to Estamart, where grocery shopping becomes a hassle-free delight!</p>
-            </div>
-            <div class="widget">
-              <h3>Connect with us</h3>
-              <ul class="social list-unstyled">
-                <li><a href="https://www.facebook.com/estamart.official"><span class="icon-facebook"></span></a></li>
-                <!-- <li><a href="#"><span class="icon-twitter"></span></a></li> -->
-                <li><a href="https://www.instagram.com/estamart.official/"><span class="icon-instagram"></span></a></li>
-                <!-- <li><a href="#"><span class="icon-dribbble"></span></a></li>
-                <li><a href="#"><span class="icon-linkedin"></span></a></li> -->
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="widget">
-              <h1>Opening Hours</h1>
-              <h2>Every Day <small>9:00 am – 9:00 pm</small> </h2>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="widget">
-                  <!-- <h3>Navigations</h3> -->
-                </div>
-              </div>
-              <div class="col-6 col-md-4">
-                
-              </div>
-              <div class="col-6 col-sm-6 col-md-4">
-                <div class="widget">
-                  <!-- <ul class="links list-unstyled">
-                    <li><a href="#">Press</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Privacy</a></li>
-                  </ul> -->
-                </div>
-              </div>
-              <div class="col-6 col-sm-6 col-md-4">
-                <div class="widget">
-                  <!-- <ul class="links list-unstyled">
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Process</a></li>
-                    <li><a href="#">About Us</a></li>
-                  </ul> -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row justify-content-center text-center copyright">
-          <div class="col-md-8">
-            <!-- 
-              **==========
-              NOTE: 
-              Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
-
-              **==========
-            -->
-            <p class="mb-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved.  <!-- License information: https://untree.co/license/ -->
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
+     <footer id="footer" style="background-color: #2a9d8f;" class="site-footer">
+      
+     </footer>
 
   </div>
 
@@ -522,6 +451,51 @@
   <script src="js/main.js"></script>
 
 </body>
+
+
+<script>
+  // Get a reference to the element where you want to insert the content
+  const importedContentt = document.getElementById('footer');
+
+  // Use fetch to retrieve the content of content.html from the same folder
+  fetch('footer.html')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.text();
+    })
+    .then(htmlContent => {
+      // Insert the retrieved HTML content into the DOM
+      importedContentt.innerHTML = htmlContent;
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+</script>
+
+
+
+<script>
+  // Get a reference to the element where you want to insert the content
+  const importedContent = document.getElementById('header');
+
+  // Use fetch to retrieve the content of content.html from the same folder
+  fetch('header.html')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.text();
+    })
+    .then(htmlContent => {
+      // Insert the retrieved HTML content into the DOM
+      importedContent.innerHTML = htmlContent;
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+</script>
 
 
 

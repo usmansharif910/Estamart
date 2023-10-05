@@ -46,9 +46,7 @@
 
 
 
-    <header id="importedContent">
-
-    </header>
+    <header style="background-color: #2a9d8f;" id="header"  class="site-navbar site-navbar-target" role="banner">
 
     </div>
   </div>
@@ -489,7 +487,7 @@
 
 <script>
   // Get a reference to the element where you want to insert the content
-  const importedContent = document.getElementById('importedContent');
+  const header = document.getElementById('header');
 
   // Use fetch to retrieve the content of content.html from the same folder
   fetch('header.html')
@@ -501,7 +499,7 @@
     })
     .then(htmlContent => {
       // Insert the retrieved HTML content into the DOM
-      importedContent.innerHTML = htmlContent;
+      header.innerHTML = htmlContent;
     })
     .catch(error => {
       console.error('Error:', error);

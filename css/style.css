@@ -1190,6 +1190,10 @@ h5,
 .site-section {
   padding: 7rem 0;
 }
+
+.site-section1 {
+  padding: 3rem 0;
+}
 @media (max-width: 991.98px) {
   .site-section {
     padding: 3rem 0;
@@ -1851,20 +1855,20 @@ h5,
 }
 
 .section-2 {
-  background: #2a9d8f;
+  /* background: #2a9d8f; */
 }
 .section-2 .section-2-title {
-  color: #fff;
+  color: black;
 }
 .section-2 .section-2-title h2 {
-  color: #fff;
+  color: black;
 }
 
 .feature-2 {
-  color: #fff;
+  color: black;
 }
 .feature-2 h3 {
-  color: #fff;
+  color: black;
 }
 .feature-2 .caption {
   font-weight: bold;
@@ -2130,4 +2134,65 @@ h5,
   .contact-section .section-title .heading {
     font-size: 20px;
   }
+}
+
+/* Define animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Apply animation */
+.foot-time {
+  animation: fadeIn 3s forwards infinite; /* Apply animation for 3 seconds infinitely */
+}
+
+/* Delay the animation for the small element */
+.time-small {
+  animation-delay: 1s; /* Delay the animation by 1 second */
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply animations */
+.feature-2-img {
+  animation: slideInFromRight 1s ease-in-out forwards;
+}
+
+.feature-2-contents {
+  animation: slideInFromLeft 1s ease-in-out forwards;
+}
+
+/* Define transition */
+.feature-2-contents {
+  transition: opacity 0.5s ease-in-out; /* Transition for opacity change */
+}
+
+/* Apply transition */
+.feature-2:hover .feature-2-contents {
+  opacity: 0.8; /* Reduce opacity on hover */
 }

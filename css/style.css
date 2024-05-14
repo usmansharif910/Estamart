@@ -681,8 +681,8 @@ h5,
 }
 @media (max-width: 991.98px) {
   .site-navbar {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 .site-navbar .toggle-button {
@@ -2195,4 +2195,84 @@ h5,
 /* Apply transition */
 .feature-2:hover .feature-2-contents {
   opacity: 0.8; /* Reduce opacity on hover */
+}
+
+@media (max-width: 425px) {
+  /* Add your mobile-specific styles here */
+  /* For example: */
+  /* .img-fluid {
+    max-width: 90%;
+    margin-left: 20px;
+  } */
+  .site-section1 {
+    max-width: 90%;
+    margin-left: 24px;
+  }
+  .feature-3 {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .feature-3:before {
+    position: absolute;
+    left: -2.01rem;
+    line-height: 0;
+    top: 0.7rem;
+    font-size: 1.5rem;
+    color: #2a9d8f;
+    font-family: "icomoon";
+    content: "\e86c";
+    margin-left: 4px;
+  }
+
+  .feature-32 {
+    position: relative;
+    margin-bottom: 40px;
+    /* width: 90%; */
+    margin-left: 20px;
+  }
+  .feature-32:before {
+    position: absolute;
+    left: -1.81rem;
+    line-height: 0;
+    top: 0.7rem;
+    font-size: 1.5rem;
+    color: #2a9d8f;
+    font-family: "icomoon";
+    content: "\e86c";
+    margin-left: 8px;
+    /* margin-right: 6px; */
+  }
+  .feature-32 h3 {
+    margin-left: 10px;
+  }
+  .faq-heading {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-32 {
+    position: relative;
+    margin-bottom: 40px;
+    /* width: 90%; */
+    margin-left: 20px;
+  }
+  .feature-32:before {
+    position: absolute;
+    left: -1.81rem;
+    line-height: 0;
+    top: 0.7rem;
+    font-size: 1.5rem;
+    color: #2a9d8f;
+    font-family: "icomoon";
+    content: "\e86c";
+    margin-left: 8px;
+    /* margin-right: 6px; */
+  }
+  .feature-32 h3 {
+    margin-left: 10px;
+  }
+  .faq-heading {
+    margin-left: 20px;
+  }
 }

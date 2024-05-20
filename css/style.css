@@ -287,7 +287,7 @@ html {
 
 .primary-outline-white--hover {
   background: transparent;
-  border-color: #fff;
+  /* border-color: #fff; */
 }
 /* .primary-outline-white--hover:hover {
     color: #2a9d8f !important;
@@ -700,7 +700,7 @@ h5,
   color: #2a9d8f;
 }
 @media (max-width: 991.98px) {
-  .site-navbar .site-logo {
+  .site-navbar .site- {
     float: left;
     position: relative;
   }
@@ -962,7 +962,7 @@ h5,
 .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo a img {
   max-width: 70px;
 }
-.site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo a:hover {
+.site-mobile-menu .site-mobile-menu-header .site-mobile-menu-a:hover {
   text-decoration: none;
 }
 .site-mobile-menu .site-mobile-menu-body {
